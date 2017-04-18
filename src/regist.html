@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>帷中暮色-注册界面</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/error.css">
+    <link rel="stylesheet" href="./css/regist.css">
+    <!-- 加载icon样式 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!-- 加载CSS框架 -->
+    <link rel="stylesheet" href="./css/style/bootstrap.min.css">
+    <!-- 加载jQuery-2.2.4 -->
+    <script type="text/javascript" src="./js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- 加载angularJS -->
+    <script type="text/javascript" src="./js/vendor/angular.js"></script>
+</head>
+<body ng-app="UserInfoModule">
+<!--[if lte IE8] >
+<p class="browserupgrade">您的浏览器版本太旧，请到<a href="https://www.microsoft.com/zh-cn/download/internet-explorer.aspx">这里下载</a>更新，以获得最佳的体验 </p>
+<![endif]-->
+<header>
+    <nav class="top">
+        <span class="tel">服务热线: 189-8301-4279</span>
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">快速注册</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">帮助</a></li>
+            <li><a href="#">反馈</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="regist">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">注册页面</div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal"
+                          role="form"
+                          ng-controller="UserInfoCtrl">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                USERNAME:
+                            </label>
+                            <div class="col-md-10">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="YOUR'S NAME"
+                                       ng-model="userInfo.username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                PASSWORD:
+                            </label>
+                            <div class="col-md-10">
+                                <input type="password"
+                                       class="form-control"
+                                       placeholder="YOUR'S PASSWORD"
+                                       ng-model="userInfo.password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                REPEAT:
+                            </label>
+                            <div class="col-md-10">
+                                <input type="password"
+                                       class="form-control"
+                                       placeholder="REPEAT YOUR'S PASSWORD"
+                                       ng-model="userInfo.passwordRepeat">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">
+                                EAMIL:
+                            </label>
+                            <div class="col-md-10">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="YOUR'S EMAIL"
+                                       ng-model="userInfo.email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" ng-model="userInfo.serviceProvision">同意
+                                        <a href="#">服务条款</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <input type="submit"
+                                       class="btn
+                                       btn-primary
+                                       btn-lg
+                                       btn-block"
+                                       value="注册">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button class="btn btn-default"
+                                        ng-click="getFormDate()">
+                                    获取Form表单的值
+                                </button>
+                                <button class="btn btn-default"
+                                        ng-click="setFormDate()">
+                                    设置Form表单的值
+                                </button>
+                                <button class="btn btn-default"
+                                        ng-click="resetFormDate()">
+                                    重置Form表单的值
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <ul>
+        <li><span class="icon icon-zfywxk">支付业务许可证</span></li>
+        <li><span class="icon icon-pcirk">PCI认证</span></li>
+        <li><span class="icon icon-visayz">Visa 验证</span></li>
+        <li><span class="icon icon-vsjmfw">VerSign加密服务</span></li>
+        <li><span class="icon icon-wlgs">网络工商</span></li>
+        <li><span class="icon icon-rzcx">电子商务协会认证诚信网</span></li>
+        <li><span class="icon icon-gs">北京工商</span></li>
+    </ul>
+    <p>重庆邮电大学移通学院个人网站 版权所有 &copy; 2016-8-21</p>
+</footer>
+<!-- 加载外部js -->
+<script type="text/javascript" src="./js/regist.js" charset="utf-8"></script>
+</body>
+</html>

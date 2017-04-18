@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+
+body {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main .error {
+    width: 100%;
+    background-color: #f9f7ed;
+}
+
+.error .error-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.error .error-content .error-top-b {
+    width: 100%;
+    margin: 3rem auto 0;
+    text-align: center;
+    font-family: "Helvetica Neue", "微软雅黑";
+    font-weight: bold;
+    font-size: 20rem;
+    color: #00aaee;
+    text-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+}
+.error .error-content .error-top-r {
+    width: 100%;
+    margin: 3rem auto 0;
+    text-align: center;
+    font-family: "Helvetica Neue", "微软雅黑";
+    font-weight: bold;
+    font-size: 20rem;
+    color: #ff1165;
+    text-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+}
+.error .error-content .resolve {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #222222;
+}
+.error-content .resolve .jump-page {
+    width: 100%;
+    margin-bottom: 3rem;
+    position: relative;
+    left: 33%;
+}
+.error .error-content .resolve .jump-page a {
+    text-decoration: none;
+    color: #ff2b68;
+}
+/* 测试阶段错误信息 */
+.error-content .wrong-reason {
+    width: 100%;
+    height: auto;
+    border: #e0e5e7 solid 1px;
+    padding: 2rem;
+    margin: 3rem;
+}
+.error-content .wrong-reason strong {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    padding: 1rem auto;
+    border-bottom: #e0e5e7 solid 1px;
+    font-size: 3rem;
+    font-family: "Helvetica Neue", "微软雅黑";
+}

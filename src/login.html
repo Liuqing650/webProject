@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>帷中暮色-登录界面</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/error.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- 加载icon样式 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!-- 加载CSS框架 -->
+    <link rel="stylesheet" href="./css/style/bootstrap.min.css">
+    <!-- 加载jQuery-2.2.4 -->
+    <script type="text/javascript" src="./js/vendor/jquery-2.2.4.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="LoginController">
+    <!--[if lte IE8] >
+    <p class="browserupgrade">您的浏览器版本太旧，请到<a href="https://www.microsoft.com/zh-cn/download/internet-explorer.aspx">这里下载</a>更新，以获得最佳的体验 </p>
+    <![endif]-->
+    <header>
+        <nav class="top">
+            <span class="tel">服务热线: 189-8301-4279</span>
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">快速注册</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">帮助</a></li>
+                <li><a href="#">反馈</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="login">
+        <div class="login-page clearfix">
+            <div class="login-left">
+                <p>left</p>
+            </div>
+            <div class="login-rigt">
+                <div class="login-form">
+                    <div class="login-content-top clearfix">
+                        <div class="login-img">
+                            <img src="./img/logo-icon.png" alt="帷中暮色logo">
+                        </div>
+                        <div class="login-title">
+                            <span>登录界面</span>
+                        </div>
+                    </div>
+                    <div class="login-ccontent clearfix">
+                        <form action="index.html" name="loginUpForm"
+                              ng-submit="submitForm()" method="post">
+                            <div class="form-group"
+                                 ng-class="{'has-success' : loginUpForm.username.$valid }">
+                                <input name="username"
+                                       type="text"
+                                       class="form-control"
+                                       ng-model="logindata.username"
+                                       placeholder="用户名"
+                                       required
+                                >
+                                <p class="error" ng-if="loginUpForm.username.$error.required && loginUpForm.username.$touched"><i class="fa fa-times-circle"></i>用户名不能为空</p>
+                            </div>
+
+                            <div class="form-group"
+                                 ng-class="{'has-success' :signUpForm.password.$valid}">
+                                <input name="password"
+                                       type="password"
+                                       class="form-control"
+                                       ng-model="logindata.password"
+                                       placeholder="密码"
+                                       required
+                                >
+                                <p class="error" ng-if="loginUpForm.password.$error.required && loginUpForm.password.$touched"><i class="fa fa-times-circle"></i>密码不能为空</p>
+                            </div>
+                            <div class="form-group login-button">
+                                <button class="button btn btn-primary">登录</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <ul>
+            <li><span class="icon icon-zfywxk">支付业务许可证</span></li>
+            <li><span class="icon icon-pcirk">PCI认证</span></li>
+            <li><span class="icon icon-visayz">Visa 验证</span></li>
+            <li><span class="icon icon-vsjmfw">VerSign加密服务</span></li>
+            <li><span class="icon icon-wlgs">网络工商</span></li>
+            <li><span class="icon icon-rzcx">电子商务协会认证诚信网</span></li>
+            <li><span class="icon icon-gs">北京工商</span></li>
+        </ul>
+        <p>重庆邮电大学移通学院个人网站 版权所有 &copy; 2016-8-21</p>
+    </footer>
+    <!-- 加载angularJS -->
+    <script type="text/javascript" src="./js/vendor/angular.js"></script>
+    <!-- 加载外部js -->
+    <script type="text/javascript" src="./js/login.js" charset="utf-8"></script>
+</body>
+</html>

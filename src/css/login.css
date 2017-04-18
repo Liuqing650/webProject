@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+/**************
+ *登录样式
+ **************/
+.login {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-size: 62.5%;
+    font-family: "Helvetica Neue", "微软雅黑";
+}
+
+.login-page {
+    position: relative;
+    margin: 10% auto;
+}
+/* 登录界面左边 */
+.login-left {
+    width: 49%;
+    margin: 0 auto;
+    float: left;
+    border-right: inset #ff1165 1px;
+}
+/* 登录界面右边 */
+.login-rigt {
+    width: 49%;
+    margin: 0 auto;
+    float: right;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.login-rigt .login-form {
+    width: 50%;
+    margin: 0rem auto;
+    padding: 0rem 3rem;
+    box-shadow: #222222 2px 2px 6px 1px;
+    border-radius: 5px;
+}
+.login-rigt .login-form .login-content-top {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 20%;
+    padding: 1rem 0;
+    line-height: 30px;
+    border-bottom: 1px solid #222222;
+}
+.login-content-top .login-img {
+    width: 30%;
+    float: left;
+}
+.login-img img {
+    display: block;
+    height: 40px;
+    margin: 5px auto;
+}
+.login-content-top .login-title {
+    width: auto;
+    float: left;
+}
+.login-title span {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.form-group {
+    margin-top: 2rem;
+}
+.form-group input {
+    margin: 0 auto;
+    display: block;
+}
+
+.form-group .error {
+    color: #cccccc;
+    margin: 10px auto 0;
+}
+.form-group .error i {
+    color: #c9302c;
+    margin: 0 5px;
+}
+.login-button {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-button button {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto 3rem;
+    line-height: 10px;
+}

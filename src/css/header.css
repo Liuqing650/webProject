@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+/* BEGIN HEADER */
+header .top {
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .tel {
+    float: left;
+}
+
+header .top ul {
+    text-align: right;
+}
+
+header .top ul li {
+    display: inline-block;
+}
+
+header .top ul li + li {
+    border-left:1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a {
+    display: inline-block;
+    padding:0 1.5rem;
+    color: #ffffff;
+}
+/* 主导航 */
+header .main {
+    width: 100%;
+    height: 7rem;
+}
+header .main .brand {
+    float: left;
+    padding: 1rem 1.5rem;
+}
+
+header .main .brand img {
+    height: 5rem;
+}
+
+header .main ul {
+    display: block;
+    text-align: right;
+    line-height: 7rem;
+}
+
+header .main ul li {
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a {
+    display: inline-block;
+    padding: 0 3rem;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    font-weight:bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active {
+    color: #ffb300;
+    background-color: #f8f6f1;
+}

@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+
+/* 底部导航 */
+.footer {
+    padding: 3rem 0;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content .brand {
+    float: left;
+    display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 20%;
+    height: 35px;
+    background: url('../img/logo@2.png') no-repeat center;
+    background-size: auto 35px;
+}
+
+.footer-content ul {
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+.footer-content ul li {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.footer-content ul li.title {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+/* 底部 */
+footer {
+    width: 100%;
+    padding: 3rem 0 5rem;
+    background-color: #ededed;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: block;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li .icon {
+    display: inline-block;
+    text-indent: -999rem;
+    margin-right: 1.5rem;
+    background: url("http://i.alipayobjects.com/e/201307/jebmKcbrh.png") no-repeat;
+    background: url("./../img/cert1.png") no-repeat;
+    background-size: 466px 447px;
+    overflow: hidden;
+}
+
+footer ul li .icon-zfywxk {
+    width: 38px;
+    height: 27px;
+    background-position: -369px -45px;
+}
+
+footer ul li .icon-pcirk {
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+
+footer ul li .icon-visayz {
+    width: 40px;
+    height: 27px;
+    background-position: -424px -90px;
+}
+
+footer ul li .icon-vsjmfw {
+    width: 64px;
+    height: 27px;
+    background-position: -401px -186px;
+}
+
+footer ul li .icon-wlgs {
+    width: 22px;
+    height: 27px;
+    background-position: -48px -48px;
+}
+
+footer ul li .icon-rzcx {
+    width: 75px;
+    height: 27px;
+    background-position: 0px -320px;
+}
+
+footer ul li .icon-gs {
+    width: 30px;
+    height: 27px;
+    background: url("./../img/cert2.png") no-repeat;
+    background-size: 25px;
+}
+
+footer p{
+    text-align: center;
+    color: #999;
+}

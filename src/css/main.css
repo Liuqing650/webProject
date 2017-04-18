@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+/* ==================
+   页面基本样式
+   ==================*/
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+/* 网站主要内容 */
+
+.container {
+    width: 100%;
+}
+
+/* END HEADER */
+
+/* 网站主要内容 */
+.container {
+    width: 100%;
+}
+
+/* 交易信息 */
+
+.transaction {
+    width: 100%;
+    background-color: #7c7365;
+}
+
+.trans-content {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.trans-data {
+    float: left;
+    padding: 1rem;
+    text-align: left;
+}
+
+.trans-data span {
+    display: inline-block;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.trans-data span.trans-money {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ff9900;
+    letter-spacing: 3px;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 2px 1px #333 inset;
+}
+
+.trans-report {
+    text-align: right;
+}
+
+.trans-report a {
+    display: inline-block;
+    padding: 1rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+/* 滚动广告 */
+
+.ad {
+    display: none;
+}
+
+/* 平台特点 */
+
+.feature {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 0;
+}
+
+.feature .item {
+    display: inline-block;
+    width: calc(33.33333% - 3rem);
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.feature .item + .item {
+    margin-left: 1.5rem;
+}
+
+.feature .item h3 {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ff9900;
+}
+
+.feature .item p {
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+/* 最新公告 */
+
+.notice {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.notice a {
+    float: left;
+    display: inline-block;
+    width: 70%;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+/* 让文字不换行，超出就隐藏掉 */
+.notice a:first-child {
+    /* 隐藏滚动条并用省略号结束文字 */
+    text-overflow: ellipsis;
+    /* 隐藏超出的文字 */
+    overflow: hidden;
+    /* 文字不换行显示 */
+    white-space: nowrap;
+}
+/* 通过CSS加入最新公告，但CSS里面增加空格需要用特殊字符\00a0 */
+.notice a:first-child:before {
+    content: '最新公告: \00a0\00a0';
+    color: #0ae;
+}
+
+.notice a span {
+    color: #999;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.notice a.more {
+    float: right;
+    width: auto;
+    margin-right: 2rem;
+    color: #ff9900;
+}
+

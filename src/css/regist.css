@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+html {
+    font-size: 62.5%;
+    color: #222;
+}
+
+.regist {
+    width: 40%;
+    margin: 5rem auto;
+}

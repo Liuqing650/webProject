@@ -1,0 +1,383 @@
+@CHARSET "UTF-8";
+
+html {
+	font-size: 62.5%; /* 1rem=10px */
+	color: #222;
+}
+
+/* 内容部分 */
+.main-content {
+    width: 80%;
+    margin: 2rem auto;
+}
+.left-list {
+    width: 72%;
+    float: left;
+}
+.blog {
+    width: 100%;
+}
+.blog+.blog {
+    margin: 2rem auto;
+}
+
+.right-msg {
+    width: 24%;
+    height: 100%;
+    margin-left: 4%;
+    float: right;
+}
+
+/* 标题 */
+.blog .blog-title{
+    background: #555;
+    color: #fff;
+    text-shadow: -0.1rem -0.1rem 0.1rem rgba(0,0,0,0.7);
+    /*border-radius: 2rem 2rem 0 0;*/
+    padding: 1.2rem 2rem;
+    font-family: "Helvetica Neue","微软雅黑";
+    font-size: 3.2rem;
+}
+
+/*********
+  左边部分
+ *********/
+
+/* 内容信息 */
+.blog .blog-msg {
+    padding: 1.5rem 2rem;
+    background: #f8f8f8;
+    background: rgba(255,255,255,0.3);
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-top-color: rgba(255,255,255,0.4);
+    border-bottom-color: rgba(255,255,255,0.4);
+    margin: 0 auto;
+}
+
+/* 用户头像 */
+.blog .blog-msg .user-msg {
+    width: 100%;
+}
+
+.blog .blog-msg .user-msg .user-img {
+    float: left;
+    width: 10rem;
+}
+
+.blog .blog-msg .user-msg .user-condition {
+    float: left;
+    position: relative;
+}
+
+.blog .blog-msg .user-img img {
+    width: 8rem;
+}
+
+.user-condition p:first-child {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Helvetica Neue", "微软雅黑";
+}
+
+.user-condition .move {
+    display: inline-block;
+    line-height: 2rem;
+}
+.user-condition .move a:first-child:before {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    content: "心情";
+    color: #d8ff2b;
+    padding: 2px;
+    margin-right: 10px;
+    background-color: #635c51;
+    font-weight: 100;
+}
+.user-condition .move a {
+    width: 30rem;
+    display: inline-block;
+    text-decoration: none;
+}
+.user-condition .lable {
+    position: relative;
+    display: inline-block;
+    min-width: 3rem;
+    text-align: center;
+    color: #ff2b68;
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    /*border-radius: 8px;*/
+    padding: 2px 3px;
+    outline: none;
+}
+
+.user-condition .lable+.lable {
+    margin: 0 1rem;
+}
+
+/* 左边内容部分 */
+.blog-content {
+    padding: 3rem 4rem 4rem;
+    display: block;
+    background: #f0f0f0;
+    background: rgba(0,0,0,0.06);
+    /*border-radius: 0 0 2rem 2rem;*/
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0 0.2rem 1rem rgba(0,0,0,0.1);
+}
+
+.blog-content .container a {
+    text-decoration: none;
+}
+
+.blog-content .container a .blog-text {
+    width: 100%;
+}
+/**********
+  查看更多
+ **********/
+.blog-more {
+    width: 100%;
+    float: left;
+}
+.blog-more .more {
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50px;
+    border: 1px solid #cccccc;
+    box-shadow: inset 0 0.2rem 2rem rgba(0,0,0,0.1);
+}
+.blog-more .more a {
+    font-weight: 900;
+    color: #3498DB;
+    text-decoration: none;
+}
+.blog-more .more a:hover {
+    color: #2980B9;
+    text-decoration: none;
+}
+
+/**********
+  右边部分
+ **********/
+
+/* 照片样式 */
+.usermsg-show {
+    width: 100%;
+}
+.usermsg-show .user-img {
+    width: 80%;
+    margin: 2rem auto;
+}
+.usermsg-show .user-img img {
+    display: block;
+    width: 10rem;
+    margin: 0 auto;
+    box-shadow: 0 0 4px #ccc;
+}
+
+/* 基础信息 */
+.user-basemsg {
+    width: 100%;
+    margin: 2rem auto 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 4px #ccc;
+}
+.user-basemsg h3 {
+    text-align: center;
+    font-weight: 900;
+    padding: 5px 0;
+    color: #ffffff;
+    background-color: #122b40;
+}
+.user-basemsg ul {
+    padding: 0 1.2rem 1.2rem;
+    margin: 2rem auto 0;
+}
+.user-basemsg ul li {
+    display: block;
+    font-size: 2rem;
+    margin: 5px 0;
+    color: #222222;
+}
+.user-basemsg ul li:first-child {
+    font-weight: 700;
+    color: #ffb300;
+    text-shadow: #5e5e5e 1px 1px 1px;
+    font-family: "Helvetica Neue", "微软雅黑";
+}
+.user-basemsg ul li:nth-child(2) {
+    font-weight: 300;
+    color: #222222;
+}
+.user-basemsg ul li:nth-child(2) span {
+    font-weight: 700;
+    padding: 0 3px;
+    font-size: 2rem;
+    color: #00aaee;
+}
+.user-basemsg ul li:nth-child(3) span {
+    text-align: center;
+    color: #00aaee;
+}
+.user-basemsg ul li:nth-child(3) {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: left;
+}
+.user-basemsg ul li:nth-child(4) {
+    font-size: 1.5rem;
+}
+.user-basemsg ul li:nth-child(4) span {
+    color: #ff2b68;
+}
+
+/* 文字收藏 */
+.blog-sum {
+    width: 100%;
+    margin-top: 1.4rem;
+    box-shadow: 0 0 4px #ccc;
+}
+.blog-sum .blog-collection-text {
+    text-align: center;
+    margin: 0 auto;
+}
+.blog-sum .blog-collection-text h3 {
+    margin-top: 0;
+    font-weight: 900;
+    padding: 5px 0;
+    color: #ffffff;
+    background-color: #122b40;
+}
+.blog-sum .blog-text {
+    width: 90%;
+    margin: 0 auto;
+}
+.blog-sum .blog-text .blog-edit {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.blog-edit span {
+    display: block;
+    font-weight: 700;
+}
+.blog-sum .blog-text .blog-collection {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+.blog-collection span {
+    display: block;
+    font-weight: 700;
+}
+.blog-text a {
+    height: 2rem;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #222222;
+}
+.blog-sum a:link {
+    font-size: 2rem;
+}
+.blog-sum a:hover {
+    font-size: 2.1rem;
+    color: #ffffff;
+    background-color: #00aaee;
+}
+    /* 好友信息 */
+.friends-list {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 4px #ccc;
+}
+.friends-list .friends-title h3 {
+    font-weight: 900;
+    margin-bottom: 0;
+    padding: 5px 0 0;
+    color: #ffffff;
+    background-color: #122b40;
+}
+.blog-friends {
+    position: relative;
+    top: -1px;
+    width: calc(100% - 2px);
+    margin: 0 auto;
+    max-height: 20rem;
+    font-size: 10rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.blog-friends a {
+    width: 100%;
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+}
+.blog-friends a span {
+    float: right;
+    padding-right: 1rem;
+    font-weight: 700;
+}
+.blog-friends a:first-child span {
+    color: #89ff1e;
+}
+.blog-friends a:nth-child(2) span {
+    color: #a6a9ab;
+}
+.blog-friends a:nth-child(3) span {
+    color: #a6a9ab;
+}
+.blog-friends a:nth-child(even) {
+    background-color: rgba(255,255,255,0.6);
+}
+.blog-friends a:nth-child(odd) {
+    background-color: rgba(255,255,255,0.9);
+}
+
+
+    /* 按钮样式 */
+.button {
+	min-width: 30%;
+	height: 5rem;
+	outline: none;
+	display: inline-block;
+	margin: 1rem 2rem;
+	padding: 0.5rem 1.5rem;
+	background: #B8ED01;
+	border: 0.1rem solid rgba(0,0,0,0.15);
+	border-radius: 0.4rem;
+	transition: all 0.3s ease-out;
+	box-shadow:
+	inset 0 0.1rem 0 rgba(255,255,255,0.5),
+	0 0.2rem 0.2rem rgba(0,0,0,0.3),
+	0 0 0.4rem 0.1rem rgba(0,0,0,0.2);
+	
+	/* 文字样式 */
+	font-family: "微软雅黑";
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	text-decoration: none;
+	text-shadow: 0 0.1rem rgba(255,255,255,0.7);
+}
+
+.button:hover  { background: #C7FE0A; }
+
+.button {
+	box-shadow:
+	inset 0 0.1rem 0 rgba(255,255,255,0.5),
+	0 0.2rem 0.2rem rgba(0,0,0,0.3),
+	0 0 0.4rem 0.1rem rgba(0,0,0,0.2),
+	inset 0 0.3rem 0.2rem rgba(255,255,255,.22), 
+	inset 0 -0.3rem 0.2rem rgba(0,0,0,.15), 
+	inset 0 2rem 1rem rgba(255,255,255,.12), 
+	0 0 0.4rem 0.1rem rgba(0,0,0,.1), 
+	0 0.3rem 0.2rem rgba(0,0,0,.2);
+}

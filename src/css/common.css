@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+/* ==========
+   基本默认值
+   ========== */
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+
+/* 用户选取的元素部分颜色样式 */
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+/* ==========
+   工具样式
+   ========== */
+/* 使子元素在父元素中居中显示 */
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+/* 隐藏、显示元素 */
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+/* 隐藏文本 */
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==================
+   浏览器更新提示
+   ==================*/
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #d8ff2b;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+/* 让文字不换行，超出就隐藏掉 */
+.text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
